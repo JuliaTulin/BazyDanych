@@ -204,15 +204,6 @@ CREATE INDEX id_okres_index ON geology.GeoOkres(id_okres);
 CREATE INDEX id_epoka_index ON geology.GeoEpoka(id_epoka);
 CREATE INDEX id_pietro_index ON geology.GeoPietro(id_pietro);
 
-
-DROP INDEX id_pietro_index ON GeoTabela;
-DROP INDEX id_eon_index ON geology.GeoEon;
-DROP INDEX id_era_index ON geology.GeoEra;
-DROP INDEX id_okres_index ON geology.GeoOkres;
-DROP INDEX id_epoka_index ON geology.GeoEpoka;
-DROP INDEX id_pietro_index ON geology.GeoPietro;
-
-
 -- 1ZL
 SELECT COUNT(*) FROM Milion INNER JOIN GeoTabela ON (mod(Milion.liczba,77)=(GeoTabela.id_pietro));
 
