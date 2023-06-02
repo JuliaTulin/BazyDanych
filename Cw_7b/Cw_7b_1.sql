@@ -40,12 +40,12 @@ BEGIN
     WHILE @i <= @n
     BEGIN
         SET @fibonacciNumber = licz.Fibonacci(@i);
-        PRINT 'Liczba ci¹gu Fibonacciego na pozycji ' + CAST(@i AS VARCHAR(30)) + ' to ' + CAST(@fibonacciNumber AS VARCHAR(30));
+        PRINT 'Liczba ciÂ¹gu Fibonacciego na pozycji ' + CAST(@i AS VARCHAR(30)) + ' to ' + CAST(@fibonacciNumber AS VARCHAR(30));
         SET @i = @i + 1;
     END
 END;
 
 
-DROP PROCEDURE licz.CalculateFibonacci;
+--DROP PROCEDURE licz.CalculateFibonacci;
 
 EXEC licz.CalculateFibonacci @n = 10; 
