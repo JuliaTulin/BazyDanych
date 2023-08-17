@@ -1,0 +1,33 @@
+Zad. 1
+Tabela zamówienia
+Zależności funkcyjne:
+
+id_produktu -> nazwa_produktu, cena_produktu, VAT
+nazwa_produktu -> id_produktu, cena_produktu, VAT
+id_klienta, data_zamowienia -> ilość
+id_klienta, data_zamowienia -> id_produktu
+id_produktu, id_klienta, data_zamowienia, VAT -> suma_brutto
+id_produktu, id_klienta, data_zamowienia -> suma_netto
+suma_netto, VAT -> suma_brutto
+cena_produktu, ilosc -> suma_brutto
+
+
+Zad. 2
+Klucze kandydujące:
+id_produktu
+id_klienta
+nazwa_klienta
+nazwa_produktu
+id_produktu, id_klienta+data_zamowienia
+
+Zad. 3
+
+Zależności funkcyjne:
+
+id_pomieszczenia -> numer_pomieszczenia, id_budynku, powierzchnia, liczba_okien, liczba_drzwi
+id_budynku -> ulica, miasto, kod_pocztowy
+kod_pocztowy -> ulica, miasto
+
+
+Klucz kandydujący:
+id_pomieszczenia, id_budynku+numer_pomieszczenia
